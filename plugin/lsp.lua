@@ -16,16 +16,23 @@ if not status then
   print("Lspsaga not loaded properly!")
   return
 end
-
-lsp.init_lsp_saga({
-  })
+lsp.setup({})
 
 mason.setup{}
 mlsp.setup()
 
-lspconf.sumneko_lua.setup {}
+lspconf.lua_ls.setup {}
 lspconf.pyright.setup {}
 lspconf.eslint.setup{}
+lspconf.phpactor.setup {
+  init_options = {
+    ["language_server_phpstan.enabled"] = false,
+    ["language_server_psalm.enabled"] = true,
+  }
+}
+lspconf.psalm.setup {
+  
+}
 -- lspconf.prettier.setup{}
 
 vim.cmd [[command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument]]

@@ -26,3 +26,4 @@ return require("packer").startup(function(use)
 	use 'neoclide/coc.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 end)
+

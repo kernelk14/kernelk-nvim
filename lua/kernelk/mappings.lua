@@ -25,9 +25,16 @@ nnoremap(";t", "<cmd>terminal<cr>", "silent")
 map("<C-Up>", ":move '<-2<cr>gv-gv")
 map("<C-Down>", ":move '>+1<cr>gv-gv")
 
+nnoremap(";ca", ":Lspsaga code_action<cr>", "silent")
+nnoremap(";hd", ":Lspsaga hover_doc<cr>", "silent")
+nnoremap(";gd", ":Lspsaga goto_definition<cr>", "silent")
+nnoremap(";pd", ":Lspsaga peek_definition<cr>", "silent")
+nnoremap(";r", ":Lspsaga rename", "silent")
 nnoremap("<C-l>", "<home>v<end><Left>")
 
 nnoremap("<C-S-Up>", "<cmd>resize -2<cr>", "silent")
 nnoremap("<C-S-Down>", "<cmd>resize +2<cr>", "silent")
 nnoremap("<C-S-Left>", "<cmd>vertical resize -2<cr>", "silent")
 nnoremap("<C-S-Right>", "<cmd>vertical resize +2<cr>", "silent")
+
+nnoremap(";v", ":e ~/.config/nvim<cr>", "silent")

@@ -1,0 +1,8 @@
+"languageserver": {
+    "psalmls" {
+        "command": "/home/khyle/vendor/bin/psalm",
+        "filetypes": ["php"],
+        "rootPatterns": ["psalm.xml", "psalm.xml.dist"],
+        "requireRootPatterns": true
+    }
+}
