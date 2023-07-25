@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/khyle/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/khyle/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/khyle/.local/share/nvim/site/pack/packer/start/lualine.nvim",
